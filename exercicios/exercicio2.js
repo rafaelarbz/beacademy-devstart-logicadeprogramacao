@@ -1,8 +1,8 @@
 //Exercicio 2: receber nome e idade e realizar analises
 
 //recebe nome e idade
-let nome = prompt('Digite o seu nome: ');
-let idade = prompt('Digite a sua idade: ');
+var nome = prompt('Digite o seu nome: ');
+var idade = prompt('Digite a sua idade: ');
 
 //exibe nome e idade informados
 console.log(`Nome informado: ${nome} -- Idade informada: ${idade}`);
