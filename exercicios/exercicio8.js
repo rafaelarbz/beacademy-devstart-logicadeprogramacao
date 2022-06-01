@@ -1,6 +1,5 @@
-/*
-Calcular área e perímetro de uma figura geometrica
-*/
+// Exercicio 8: Calcular área e perímetro de uma figura geometrica
+
 
 var getfigura = prompt('Escolha a figura que deseja calcular, digite Q para QUADRADO ou T para TRIANGULO EQUILATERO: ').toUpperCase();
 

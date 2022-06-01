@@ -1,21 +1,21 @@
-/*
+/* Exercicio 9
 Programa que permite ao usuário escolher entre DEPOSITO, SAQUE, TRANSFERENCIA
 Para isso, o usuario deve informar a operacao, o nome do banco, agencia,conta
-Então exiba a operacao realizada, o saldo inicial
+Então exiba o sado inicial, operacao realizada e saldo final
 Em caso de transferencia exiba também os dados bancarios de destino
 */
 
-let operacao = prompt('Escolha a operação que deseja realizar, use D para DEPOSITO, S para SAQUE ou T para TRANSFERENCIA: ').toUpperCase();
+var operacao = prompt('Escolha a operação que deseja realizar, use D para DEPOSITO, S para SAQUE ou T para TRANSFERENCIA: ').toUpperCase();
 
-let banco = prompt('Digite o nome do banco: ');
+var banco = prompt('Digite o nome do banco: ');
 
-let agencia = prompt('Informe a agência: ');
+var agencia = prompt('Informe a agência: ');
 
-let conta = prompt('Informe o número da conta: ');
+var conta = prompt('Informe o número da conta: ');
 
-let valor = parseFloat(prompt('Digite o valor da operação: '));
+var valor = parseFloat(prompt('Digite o valor da operação: '));
 
-let saldo = 1500;
+var saldo = 1500;
 
 switch (operacao) {
   case 'D':
@@ -35,7 +35,7 @@ switch (operacao) {
     }
   case 'T':
     console.log(`Seu saldo inicial é de R$ ${saldo}.`);
-    let destino = prompt('Digite o Nº da Conta de destino: ');
+    var destino = prompt('Digite o Nº da Conta de destino: ');
     if (saldo < valor) {
       console.log('Saldo insuficiente!');
       break;
